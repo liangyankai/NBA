@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>抽屉效果</title>
+		<style type="text/css">
+		  *{margin: 0; padding: 0;}
+		 #bigbox{width: 980px;margin: 50px auto;}
+		 #bigbox .all{width:315px;height:345px; position:relative;overflow:hidden;cursor:pointer;float:left;margin:5px;}
+		 #bigbox .all .box{border:1px solid red; width: 315px; height: 345px; background:#000;position:absolute; top:0; left:0; opacity:0;transition:all 300ms ease;/* 兼容IE9+ 浏览器 */-webkit-transition:all 300ms ease;/* 兼容Google Chrome 浏览器 */-o-transition:all 300ms ease;/* 兼容火狐浏览器 */}
+		 #bigbox .all .text{width:315px;height:55px;line-height:55px;background:#000;text-align:center;position:absolute;top:145px;left:-315px;transition:all 300ms ease;/* 兼容IE9+ 浏览器 */-webkit-transition:all 300ms ease;/* 兼容Google Chrome 浏览器 */-o-transition:all 300ms ease;/* 兼容火狐浏览器 */}
+		 #bigbox .all .text a{font-size: 26px;color: #FF0000;text-decoration:none;}
+		 #bigbox .all .text a:hover{color: #006600;}
+		 #bigbox .all:hover .box{opacity: 0.7}
+		 #bigbox .all:hover .text{left: 0;} 
+		</style>
+	</head>
+	<body>
+		<div id="bigbox">
+		    <div class="all">
+		    	<img src="image/1.jpg"/ alt="">
+		    	<div class="box"></div>
+		    	<div class="text">
+		    		<a href="#">后摇 你好</a>
+		    	</div>
+		    </div>
+		   <div class="all">
+		    	<img src="image/2.jpg"/ alt="">
+		    	<div class="box"></div>
+		    	<div class="text">
+		    		<a href="#">后摇 你好，相信过程</a>
+		    	</div>
+		    </div>
+		  <div class="all">
+		    	<img src="image/3.jpg"/ alt="">
+		    	<div class="box"></div>
+		    	<div class="text">
+		    		<a href="#">后摇 你好，一切都会变好</a>
+		    	</div>
+		    </div>
+		</div>
+	</body>
+</html>
